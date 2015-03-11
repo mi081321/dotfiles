@@ -2,7 +2,7 @@
 set encoding=utf-8
 set fileencoding=cp932
 "文字コードの自動認識
-set fileencodings=ucs-bom,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932,utf16,utf-8,latin1
+set fileencodings=ucs-bom,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932,utf-8,latin1
 
 scriptencoding cp932
 
@@ -93,7 +93,7 @@ set backspace=start,eol,indent
 
 "不可視文字を表示
 set list
-set listchars=tab:>-,eol:｣,extends:>,precedes:<
+set listchars=tab:>-,trail:･,eol:｣,extends:>,precedes:<
 highlight SpecialKey term=underline ctermfg=darkgray guifg=darkgray
 highlight NonText term=underline ctermfg=darkgray guifg=darkgray
 "全角スペースを視覚化
@@ -139,6 +139,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'vobornik/vim-mql4'
 NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'scrooloose/nerdtree'
 
 " 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグイン/インデントを有効化する
 filetype plugin indent on
