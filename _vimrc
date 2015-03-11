@@ -150,8 +150,8 @@ NeoBundleCheck
 "lightline
 "-------------------------------------------------------------------
 let g:lightline = {
-      \ 'colorscheme': 'wombat'
-      \ }
+\	'colorscheme': 'wombat'
+\	}
 
 "-------------------------------------------------------------------
 "Quickrun
