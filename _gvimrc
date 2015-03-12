@@ -12,7 +12,7 @@ set fileformats=dos,mac,unix
 "---------------OS依存---------------"
 "ランタイムパス
 "環境変数を設定してください
-set runtimepath=$HOME
+set runtimepath+=$HOME
 
 "------------------------------------"
 

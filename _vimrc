@@ -1,5 +1,5 @@
 "デフォルトの文字コード
-set encoding=utf-8
+"set encoding=utf-8
 set fileencoding=cp932
 "文字コードの自動認識
 set fileencodings=ucs-bom,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932,utf-8,latin1
@@ -12,7 +12,7 @@ set fileformats=dos,mac,unix
 "---------------OS依存---------------"
 "ランタイムパス
 "環境変数を設定してください
-set runtimepath=$HOME
+set runtimepath+=$HOME/dotfiles
 
 "------------------------------------"
 
@@ -93,7 +93,7 @@ set backspace=start,eol,indent
 
 "不可視文字を表示
 set list
-set listchars=tab:>-,trail:･,eol:｣,extends:>,precedes:<
+set listchars=tab:>-,nbsp:･,trail:･,eol:｣,extends:>,precedes:<
 highlight SpecialKey term=underline ctermfg=darkgray guifg=darkgray
 highlight NonText term=underline ctermfg=darkgray guifg=darkgray
 "全角スペースを視覚化
@@ -126,7 +126,7 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
 endif
 
-" neobundle.vimの初期化 
+" neobundle.vimの初期化
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 call neobundle#end()
@@ -135,7 +135,8 @@ call neobundle#end()
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " 読み込むプラグインを記載
-"NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'vobornik/vim-mql4'
 NeoBundle 'thinca/vim-quickrun'
