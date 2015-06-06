@@ -1,151 +1,152 @@
-"ƒfƒtƒHƒ‹ƒg‚Ì•¶šƒR[ƒh
+"ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®æ–‡å­—ã‚³ãƒ¼ãƒ‰
 "set encoding=utf-8
 set fileencoding=cp932
-"•¶šƒR[ƒh‚Ì©“®”F¯
+"æ–‡å­—ã‚³ãƒ¼ãƒ‰ã®è‡ªå‹•èªè­˜
 set fileencodings=ucs-bom,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932,utf-8,latin1
 
 scriptencoding cp932
 
-"ƒtƒ@ƒCƒ‹ƒtƒH[ƒ}ƒbƒg
+"ãƒ•ã‚¡ã‚¤ãƒ«ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ
 set fileformats=dos,mac,unix
 
-"---------------OSˆË‘¶---------------"
-"ƒ‰ƒ“ƒ^ƒCƒ€ƒpƒX
-"ŠÂ‹«•Ï”‚ğİ’è‚µ‚Ä‚­‚¾‚³‚¢
+"---------------OSä¾å­˜---------------"
+"ãƒ©ãƒ³ã‚¿ã‚¤ãƒ ãƒ‘ã‚¹
+"ç’°å¢ƒå¤‰æ•°ã‚’è¨­å®šã—ã¦ãã ã•ã„
 set runtimepath+=$HOME/dotfiles
 
 "------------------------------------"
 
-" ƒnƒCƒ‰ƒCƒg‚ğ—LŒø‚É‚·‚é
+" ãƒã‚¤ãƒ©ã‚¤ãƒˆã‚’æœ‰åŠ¹ã«ã™ã‚‹
 if &t_Co > 2 || has('gui_running')
   syntax on
 endif
 
-"mql4 ‚ÉƒVƒ“ƒ^ƒbƒNƒXƒnƒCƒ‰ƒCƒg‚ğ“K—p‚·‚é
-"filetype ‚ğ C ‚É‚·‚é‚¾‚¯‚È‚ñ‚Å‚·‚¯‚Ç‚Ë
+"mql4 ã«ã‚·ãƒ³ã‚¿ãƒƒã‚¯ã‚¹ãƒã‚¤ãƒ©ã‚¤ãƒˆã‚’é©ç”¨ã™ã‚‹
+"filetype ã‚’ C ã«ã™ã‚‹ã ã‘ãªã‚“ã§ã™ã‘ã©ã­
 au BufNewFile,BufRead *.mq4 set filetype=c
 au BufNewFile,BufRead *.mq4 set cindent
 au BufNewFile,BufRead *.mqh set filetype=c
 au BufNewFile,BufRead *.mqh set cindent
 
-"UNDOƒtƒ@ƒCƒ‹‚ğì¬‚µ‚Ü‚¹‚ñ
+"UNDOãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œæˆã—ã¾ã›ã‚“
 set noundofile
-"ƒoƒbƒNƒAƒbƒv‚µ‚Ü‚¹‚ñ
+"ãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—ã—ã¾ã›ã‚“
 set nobackup
-"ƒXƒƒbƒvƒtƒ@ƒCƒ‹‚ğì¬‚µ‚Ü‚¹‚ñ
+"ã‚¹ãƒ¯ãƒƒãƒ—ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œæˆã—ã¾ã›ã‚“
 set noswapfile
 
-"ƒ^ƒuƒTƒCƒY‚Í4‚Å‚·
+"ã‚¿ãƒ–ã‚µã‚¤ã‚ºã¯4ã§ã™
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-"ƒI[ƒgƒCƒ“ƒfƒ“ƒg
+"ã‚ªãƒ¼ãƒˆã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆ
 set autoindent
-"‚“x‚ÈƒCƒ“ƒfƒ“ƒg
+"é«˜åº¦ãªã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆ
 set smartindent
 
-"s”Ô†•\¦
+"è¡Œç•ªå·è¡¨ç¤º
 set number
-"s––‚Æs“ª‚ğ‚Â‚È‚°‚é
+"è¡Œæœ«ã¨è¡Œé ­ã‚’ã¤ãªã’ã‚‹
 set whichwrap=b,s,h,l,<,>,[,]
 
-"‰¡ƒXƒNƒ[ƒ‹‚µ‚½‚ÉƒXƒNƒ[ƒ‹‚·‚é’l
+"æ¨ªã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã—ãŸæ™‚ã«ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã™ã‚‹å€¤
 set sidescroll=1
 set sidescrolloff=4
 
-"ƒ}ƒEƒX‘€ì‚ª’»‚é‚ç‚µ‚¢
+"ãƒã‚¦ã‚¹æ“ä½œãŒæ—ã‚‹ã‚‰ã—ã„
 set mouse=a
 
-"ƒXƒNƒŠ[ƒ“‘Î‰
+"ã‚¹ã‚¯ãƒªãƒ¼ãƒ³å¯¾å¿œ
 if &term == "screen"
 	set ttymouse=xterm2
 endif
 
-"ƒfƒtƒHƒ‹ƒg‚ÌƒEƒBƒ“ƒhƒEƒTƒCƒY
+"ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚µã‚¤ã‚º
 set lines=40
 set columns=150
 
-"ƒEƒBƒ“ƒhƒE‚Ì•\¦ˆÊ’ui¶ã‚ÌÀ•Wj
+"ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®è¡¨ç¤ºä½ç½®ï¼ˆå·¦ä¸Šã®åº§æ¨™ï¼‰
 :winpos 20 25
 
-"ƒfƒtƒHƒ‹ƒg‚Ì‰æ–Ê•ªŠ„i‰º‚É•ªŠ„j
+"ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ç”»é¢åˆ†å‰²ï¼ˆä¸‹ã«åˆ†å‰²ï¼‰
 set splitbelow
 
-"ƒNƒŠƒbƒvƒ{[ƒh‚ğWindows‚Æ˜AŒg
+"ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‚’Windowsã¨é€£æº
 set clipboard=unnamed
 
-"•Â‚¶Š‡ŒÊ‚ª“ü—Í‚³‚ê‚½‚Æ‚«A‘Î‰‚·‚éŠ‡ŒÊ‚ğ•\¦‚·‚é
+"é–‰ã˜æ‹¬å¼§ãŒå…¥åŠ›ã•ã‚ŒãŸã¨ãã€å¯¾å¿œã™ã‚‹æ‹¬å¼§ã‚’è¡¨ç¤ºã™ã‚‹
 set showmatch
 
-"ŒŸõ‚É‘å•¶š‚ğŠÜ‚ñ‚Å‚¢‚½‚ç‘å/¬‚ğ‹æ•Ê
+"æ¤œç´¢æ™‚ã«å¤§æ–‡å­—ã‚’å«ã‚“ã§ã„ãŸã‚‰å¤§/å°ã‚’åŒºåˆ¥
 set ignorecase 
 set smartcase
-"ŒŸõ‚ğƒtƒ@ƒCƒ‹‚Ìæ“ª‚Öƒ‹[ƒv‚µ‚È‚¢
+"æ¤œç´¢ã‚’ãƒ•ã‚¡ã‚¤ãƒ«ã®å…ˆé ­ã¸ãƒ«ãƒ¼ãƒ—ã—ãªã„
 set nowrapscan
-"ŒŸõŒ‹‰Ê‚ğƒnƒCƒ‰ƒCƒg‚·‚é
+"æ¤œç´¢çµæœã‚’ãƒã‚¤ãƒ©ã‚¤ãƒˆã™ã‚‹
 set hlsearch
 
-"©“®‰üs‚µ‚È‚¢
+"è‡ªå‹•æ”¹è¡Œã—ãªã„
 set nowrap
 
-"ƒoƒbƒNƒXƒy[ƒX‚ªg‚¦‚é‚æ
+"ãƒãƒƒã‚¯ã‚¹ãƒšãƒ¼ã‚¹ãŒä½¿ãˆã‚‹ã‚ˆ
 set backspace=start,eol,indent
 
-"•s‰Â‹•¶š‚ğ•\¦
+"ä¸å¯è¦–æ–‡å­—ã‚’è¡¨ç¤º
 set list
-set listchars=tab:>-,nbsp:¥,trail:¥,eol:£,extends:>,precedes:<
+set listchars=tab:>-,nbsp:ï½¥,trail:ï½¥,eol:ï½£,extends:>,precedes:<
 highlight SpecialKey term=underline ctermfg=darkgray guifg=darkgray
 highlight NonText term=underline ctermfg=darkgray guifg=darkgray
-"‘SŠpƒXƒy[ƒX‚ğ‹Šo‰»
+"å…¨è§’ã‚¹ãƒšãƒ¼ã‚¹ã‚’è¦–è¦šåŒ–
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=#666666
-au BufNewFile,BufRead * match ZenkakuSpace /@/
+au BufNewFile,BufRead * match ZenkakuSpace /ã€€/
 
-"“ü—Íƒ‚[ƒhAƒXƒe[ƒ^ƒXƒ‰ƒCƒ“‚ÌƒJƒ‰[‚ğ•ÏX
+"å…¥åŠ›ãƒ¢ãƒ¼ãƒ‰æ™‚ã€ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³ã®ã‚«ãƒ©ãƒ¼ã‚’å¤‰æ›´
 augroup InsertHook
 autocmd!
 autocmd InsertEnter * highlight StatusLine guifg=#ccdc90 guibg=#2E4340
 autocmd InsertLeave * highlight StatusLine guifg=#2E4340 guibg=#ccdc90
 
-"grep ÀsA©“®‚Å Quickfix ‚ğ•\¦‚µ‚Ü‚·
+"grep å®Ÿè¡Œæ™‚ã€è‡ªå‹•ã§ Quickfix ã‚’è¡¨ç¤ºã—ã¾ã™
 autocmd QuickfixCmdPost make,grep,grepadd,vimgrep if len(getqflist()) != 0 | copen | endif
 
-"grep ÀsAw’è‚µ‚½Šg’£q‚ğƒtƒ@ƒCƒ‹ŒŸõ‚©‚çœŠO‚µ‚Ü‚·
+"grep å®Ÿè¡Œæ™‚ã€æŒ‡å®šã—ãŸæ‹¡å¼µå­ã‚’ãƒ•ã‚¡ã‚¤ãƒ«æ¤œç´¢ã‹ã‚‰é™¤å¤–ã—ã¾ã™
 autocmd QuickFixCmdPre * setlocal wildignore=*.exe,*.app,*.ocx,*.jpg,*.png,*.bmp,*.gif,*.class,*.jar,*.apk,*.lib,*.dll,*.obj,*.bin,*.pdb,*.exp,*.lik,*.dat,*.avi,*.mp4,*.wmv,*.zip,*.cab
 autocmd QuickFixCmdPost * setlocal wildignore=
 
-"ŠO•” grep ‚ğ—˜—p‚µ‚Ü‚·icygwinj
+"å¤–éƒ¨ grep ã‚’åˆ©ç”¨ã—ã¾ã™ï¼ˆcygwinï¼‰
 set grepprg=c:/cygwin/bin/grep\ -nH\ -r 
 
-">>> ƒvƒ‰ƒOƒCƒ“Œn‚Ìİ’è >>>
+">>> ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ç³»ã®è¨­å®š >>>
 "-------------------------------------------------------------------
 "NeoBundle
 "-------------------------------------------------------------------
-" vim‹N“®‚Ì‚İruntimepath‚Éneobundle.vim‚ğ’Ç‰Á
+" vimèµ·å‹•æ™‚ã®ã¿runtimepathã«neobundle.vimã‚’è¿½åŠ 
 if has('vim_starting')
   set nocompatible
   set runtimepath+=~/.vim/bundle/neobundle.vim
 endif
 
-" neobundle.vim‚Ì‰Šú‰»
+" neobundle.vimã®åˆæœŸåŒ–
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 call neobundle#end()
 
-" NeoBundle‚ğXV‚·‚é‚½‚ß‚Ìİ’è
+" NeoBundleã‚’æ›´æ–°ã™ã‚‹ãŸã‚ã®è¨­å®š
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" “Ç‚İ‚Şƒvƒ‰ƒOƒCƒ“‚ğ‹LÚ
+" èª­ã¿è¾¼ã‚€ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’è¨˜è¼‰
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'vobornik/vim-mql4'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'tomtom/tcomment_vim'
 
-" “Ç‚İ‚ñ‚¾ƒvƒ‰ƒOƒCƒ“‚àŠÜ‚ßAƒtƒ@ƒCƒ‹ƒ^ƒCƒv‚ÌŒŸoAƒtƒ@ƒCƒ‹ƒ^ƒCƒv•Êƒvƒ‰ƒOƒCƒ“/ƒCƒ“ƒfƒ“ƒg‚ğ—LŒø‰»‚·‚é
+" èª­ã¿è¾¼ã‚“ã ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚‚å«ã‚ã€ãƒ•ã‚¡ã‚¤ãƒ«ã‚¿ã‚¤ãƒ—ã®æ¤œå‡ºã€ãƒ•ã‚¡ã‚¤ãƒ«ã‚¿ã‚¤ãƒ—åˆ¥ãƒ—ãƒ©ã‚°ã‚¤ãƒ³/ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆã‚’æœ‰åŠ¹åŒ–ã™ã‚‹
 filetype plugin indent on
 
-" ƒCƒ“ƒXƒg[ƒ‹‚Ìƒ`ƒFƒbƒN
+" ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã®ãƒã‚§ãƒƒã‚¯
 NeoBundleCheck
 
 "-------------------------------------------------------------------
@@ -158,12 +159,12 @@ let g:lightline = {
 "-------------------------------------------------------------------
 "Quickrun
 "-------------------------------------------------------------------
-"Quickrun‚ÌÀsŒ‹‰Ê‚Ì•\¦ˆÊ’u
+"Quickrunã®å®Ÿè¡Œçµæœã®è¡¨ç¤ºä½ç½®
 let g:quickrun_config={
 \	"_": {
 \		"outputter/buffer/split" : ":botright 8sp",
 \	}
 \}
 
-"<<< ƒvƒ‰ƒOƒCƒ“Œn‚Ìİ’è <<<
+"<<< ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ç³»ã®è¨­å®š <<<
 
