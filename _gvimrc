@@ -151,3 +151,4 @@ autocmd QuickFixCmdPost * setlocal wildignore=
 
 "外部 grep を利用します（cygwin）
 set grepprg=c:/cygwin/bin/grep\ -nH\ -r 
+
