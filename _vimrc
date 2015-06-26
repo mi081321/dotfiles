@@ -87,6 +87,7 @@ set hlsearch
 
 "自動改行しない
 set nowrap
+autocmd FileType text setlocal textwidth=0
 
 "バックスペースが使えるよ
 set backspace=start,eol,indent
@@ -141,6 +142,7 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'vobornik/vim-mql4'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'tyru/caw.vim.git'
 
 " 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグイン/インデントを有効化する
 filetype plugin indent on
@@ -164,6 +166,10 @@ let g:quickrun_config={
 \		"outputter/buffer/split" : ":botright 8sp",
 \	}
 \}
+
+"コメントアウトのキーマッピング
+nmap <C-K> <Plug>(caw:i:toggle)
+vmap <C-K> <Plug>(caw:i:toggle)
 
 "<<< プラグイン系の設定 <<<
 
