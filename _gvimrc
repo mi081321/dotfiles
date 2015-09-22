@@ -46,9 +46,9 @@ endif
 
 "mql4 にシンタックスハイライトを適用する
 "filetype を C にするだけなんですけどね
-au BufNewFile,BufRead *.mq4 set filetype=c
+au BufNewFile,BufRead *.mq4 set filetype=cpp
 au BufNewFile,BufRead *.mq4 set cindent
-au BufNewFile,BufRead *.mqh set filetype=c
+au BufNewFile,BufRead *.mqh set filetype=cpp
 au BufNewFile,BufRead *.mqh set cindent
 
 "UNDOファイルを作成しません
